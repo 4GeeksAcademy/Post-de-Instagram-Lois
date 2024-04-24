@@ -1,0 +1,124 @@
+*{
+    background-color: white;
+    box-sizing: border-box;/* Asegura que el padding y el borde estén incluidos en el tamaño total */
+}
+    
+.Post{
+    background-color: black;
+    display: flex;
+    width: 400px;
+    height: 530px;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+.Cabecera{
+    background-color: white;
+    width: 95%; 
+    height: 40px;
+    margin-top: 10px;
+    display: flex; /* Uso de flexbox para alinear horizontalmente */
+    justify-content: space-between; /* Separar el lado izquierdo del derecho */
+    align-items: center; /* Alinear verticalmente */
+    
+}
+
+
+.Contenidoizquierda{
+    justify-content: flex-start; /* Mover todo al extremo izquierdo */
+    display: flex; /* Flexbox para alinear horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+
+}
+.ic{
+    color: orange;
+    font-size: 1.2rem;
+    padding: 2px 3px;
+    margin-right: 3px; /* Espacio entre el ícono y los textos */
+
+}
+
+.textos{
+    font-size: 0.5rem;
+    flex-direction: column;
+}
+.textosuperior {
+    margin-bottom: 0; /* Eliminar margen inferior para acercar al texto inferior */
+    font-weight: bold; /* Define texto en negrita */
+}
+
+.textoinferior {
+    margin-top: 0; /* Eliminar margen superior para acercar al texto superior */
+}
+
+.imagen {
+    width: 95%; /* Ancho del contenedor */
+    height: 250px; /* Altura del contenedor. Ajusta según necesites */
+    
+    overflow: hidden; /* Evita que la imagen se salga del contenedor */
+  }
+
+.imagen img {
+    width: 100%; /* Asegurar que la imagen cubre todo el ancho del contenedor */
+    height: 100%; /* Asegurar que la imagen cubre todo el alto del contenedor */
+    object-fit: cover; /* Ajustar la imagen para cubrir el contenedor sin deformarse */
+    object-position: center; /* Centrar la imagen en el contenedor */
+  }
+
+
+
+.Textopost{
+    background-color: white;
+    width: 95%;
+    height: 215px;
+    overflow: hidden;
+    
+    margin-bottom: 10px;
+}
+
+.iconos{
+    margin-top: 3px;
+    display: flex; /* Uso de flexbox para alinear horizontalmente */
+    justify-content: space-between; /* Separar el lado izquierdo del derecho */
+    align-items: center; /* Alinear verticalmente */
+    
+}
+
+.bi.bi-heart { /*tiene dos clases: class="bi bi-heart"*/
+    color: black; /* Color por defecto */
+    transition: color 0.1s; /* Transición para suavizar el cambio */
+}
+
+.bi.bi-heart:hover { 
+    color: red; /* Cambiar a rojo cuando el ratón esté encima.*/
+}
+
+.izquierda{
+    font-size: 1.3rem;
+    margin-right: 3px; /* Espacio entre el ícono y los textos */ 
+    padding: 3px 3px;
+   
+
+}
+.derecha{
+    font-size: 1.3rem;
+    margin-right: 3px; /* Espacio entre el ícono y los textos */
+    padding: 3px 3px;
+   
+}
+
+.textospie{
+    padding: 1px 5px;
+    text-align: justify;
+    text-overflow: ellipsis
+  
+}
+.parrafo1{
+    font-size: 0.7rem;
+}
+.parrafo2{
+    margin-top: 1.2px;
+    font-size: 0.9rem;
+    
+   
+}
